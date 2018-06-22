@@ -24,8 +24,9 @@ $(document).ready(function(){
 	});
 	
 	//close search form
-	searchForm.on('click', '.btn-search-close', function(){
+	searchForm.on('click', '.btn-search-close', function(event){
 		closeSearchForm();
+		event.preventDefault();
 	});
 
 	coverLayer.on('click', function(){
@@ -33,7 +34,21 @@ $(document).ready(function(){
 	});
 	
 	$(document).keyup(function(event){
-		if( event.which=='27' ) closeSearchForm();
+		if( event.which=='27' ){
+			closeSearchForm();
+		}
+	});
+	
+	/*---------- NAVIGATION HAMBURGER ----------*/
+	$(".navigation-hamburger").on("click", function(){
+		if($(this).hasClass('-open')){
+			$(this).removeClass('-open').addClass('-close');
+			$('body').removeClass('menu-open');
+		}
+		else{
+			$(this).removeClass('-close').addClass('-open');
+			$('body').addClass('menu-open');
+		}
 	});
 	
 }); //End of document.ready
