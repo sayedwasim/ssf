@@ -51,4 +51,18 @@ $(document).ready(function(){
 		}
 	});
 	
+	/*--- Banner Slider ---*/
+	if($('.banner-slider').length){
+		var banner_slider = $(".banner-slider");
+		banner_slider.owlCarousel({
+			items:1,
+			responsiveRefreshRate:0,
+			autoplay:true,
+			autoplayTimeout:10000,
+			loop:true,
+			nav:false,
+			animateOut: 'fadeOut'
+		});
+	}
+	
 }); //End of document.ready
