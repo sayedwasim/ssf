@@ -65,4 +65,20 @@ $(document).ready(function(){
 		});
 	}
 	
+	/*--- Footer Stories ---*/
+	if($('.footer-stories').length){
+		var footer_stories = $(".footer-stories");
+		footer_stories.owlCarousel({
+			items:2,
+			slideBy:2,
+			responsiveRefreshRate:0,
+			autoplay:true,
+			autoplayTimeout:7000,
+			loop:true,
+			nav:true,
+			navText:["<i class='icon-arrow-left'></i>","<i class='icon-arrow-right'></i>"],
+			dots:false
+		});
+	}
+	
 }); //End of document.ready
