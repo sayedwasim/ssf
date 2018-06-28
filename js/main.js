@@ -81,4 +81,9 @@ $(document).ready(function(){
 		});
 	}
 	
+	/*--- EQUAL HEIGHT ---*/
+	if($('#principles').length) {
+		$('#principles li').matchHeight();
+	}
+	
 }); //End of document.ready
