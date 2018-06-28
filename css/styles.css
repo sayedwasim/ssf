@@ -8,11 +8,11 @@ input[type="radio"]{-webkit-appearance:radio;}
 /*---------- ICONS ----------*/
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?do90wp');
-  src:  url('fonts/icomoon.eot?do90wp#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?do90wp') format('truetype'),
-    url('fonts/icomoon.woff?do90wp') format('woff'),
-    url('fonts/icomoon.svg?do90wp#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?e0cbc3');
+  src:  url('fonts/icomoon.eot?e0cbc3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?e0cbc3') format('truetype'),
+    url('fonts/icomoon.woff?e0cbc3') format('woff'),
+    url('fonts/icomoon.svg?e0cbc3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,6 +30,22 @@ input[type="radio"]{-webkit-appearance:radio;}
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-flag:before {
+  content: "\e90d";
+}
+.icon-briefcase:before {
+  content: "\e909";
+}
+.icon-location:before {
+  content: "\e90a";
+}
+.icon-documents:before {
+  content: "\e90b";
+}
+.icon-checkmark:before {
+  content: "\e90c";
 }
 
 .icon-menu:before {
@@ -766,6 +782,19 @@ p.light-grey{color:#8c8f94;}
 	font-family:'PT Serif', serif;font-weight:700;font-style:italic;
 }
 #principles p{font-size:16px;line-height:1.63;margin:0;}
+
+/*---------- DONOR ----------*/
+#donors .content-wrapper:nth-child(even){background-color:rgba(22, 89, 137, 0.05);}
+#donors .content-wrapper:nth-child(even) h2{color:#222328;}
+.donor .tbl{display:table;width:100%;}
+.donor .tbl .col{display:table-cell;vertical-align:top;}
+.donor .tbl .col.left{width:543px;padding-right:170px;}
+.donor .role{margin-top:60px;border-top:1px solid rgba(34,35,40,0.1);text-align:center;font-size:0;}
+.donor .role li{display:inline-block;vertical-align:top;padding:30px 60px;width:33.33%;}
+.donor .role .icon{width:30px;height:30px;line-height:30px;display:block;margin:0 auto;
+	font-size:20px;color:rgba(0, 0, 0, 0.54);
+}
+.donor .role .desc{display:block;font-weight:500;color:#292a2f;font-size:18px;}
 
 /*---------- COVER LAYER ----------*/
 .cover-layer{display:block;position:fixed;z-index:3;top:0;left:0;height:100%;width:100%;
