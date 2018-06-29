@@ -149,6 +149,15 @@ img{max-width:100%;width:100%;height:auto;padding:0;margin:0;border:none;display
 .btn-outlined.blue{border-color:#165989;color:#165989;}
 .btn-outlined.blue:hover{color:#fff;}
 
+.btn-more{border:2px solid #3b55e6;height:36px;color:#3b55e6;padding:0 25px;display:inline-block;
+	font-size:11px;letter-spacing:1px;line-height:32px;text-transform:uppercase;
+	vertical-align:top;font-weight:normal;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+}
+.btn-more.btn-effect:before{background-color:#3b55e6;}
+.btn-more:hover{color:#fff;}
+
 
 /*---------- HEADER ----------*/
 header{position:fixed;left:0;top:0;width:100%;height:100px;z-index:1500;background-color:#fff;
@@ -795,6 +804,31 @@ p.light-grey{color:#8c8f94;}
 	font-size:20px;color:rgba(0, 0, 0, 0.54);
 }
 .donor .role .desc{display:block;font-weight:500;color:#292a2f;font-size:18px;}
+
+/*---------- BLOG ----------*/
+.articles{font-size:0;margin-left:-30px;}
+.articles li{display:inline-block;vertical-align:top;width:25%;padding:0 0 60px 30px;position:relative;}
+.articles .pic{display:block;background-color:#000;overflow:hidden;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+}
+.articles img{
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.articles a:hover img{opacity:0.6;}
+.articles .title{display:block;font-family:'PT Serif', serif;font-weight:normal;font-style:italic;
+	font-size:22px;line-height:1.45;color:#165989;margin:20px 0 10px 0;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.articles a:hover .title{color:#ff4900;}
+.articles .author{display:block;font-size:12px;line-height:1.83;letter-spacing:1px;color:#8c8f94;
+	font-weight:normal;text-transform:uppercase;margin-bottom:60px;
+}
+.articles .author a{color:#222328;}
+.articles .author a:hover{color:#ff4900;}
+.articles .btn-more{position:absolute;left:30px;bottom:60px;}
 
 /*---------- COVER LAYER ----------*/
 .cover-layer{display:block;position:fixed;z-index:3;top:0;left:0;height:100%;width:100%;

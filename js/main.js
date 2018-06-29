@@ -86,4 +86,8 @@ $(document).ready(function(){
 		$('#principles li').matchHeight();
 	}
 	
+	if($('.articles').length) {
+		$('.articles li').matchHeight();
+	}
+	
 }); //End of document.ready
