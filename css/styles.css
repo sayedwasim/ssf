@@ -917,6 +917,23 @@ p.light-grey{color:#8c8f94;}
 .contact-form :-ms-input-placeholder {color:#8c8f94;opacity:1;}
 .contact-form ::placeholder {color:#8c8f94;opacity:1;}
 
+/*---------- APPLICATION TIMELINE ----------*/
+.timeline{color:#8c8f94;max-width:800px;margin:0 auto;counter-reset:headings;}
+.timeline li{position:relative;padding:0 0 50px 30px;border-left:2px solid rgba(188,198,201,0.3);}
+.timeline li:last-child{border:0 none;padding-bottom:0;}
+.timeline li:before {display:block;width:36px;height:36px;background-color:#fff;
+	text-align:center;line-height:32px;border:2px solid #bcc6c9;color:#222328;;
+  counter-increment: headings;
+  content: counter(headings, decimal); 
+	position:absolute;left:-19px;top:-6px;z-index:5;font-size:12px;font-weight:400;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+}
+.timeline h3{font-size:16px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;
+	color:#165989;margin-bottom:20px;
+}
+.timeline p{margin-bottom:0;}
+
 /*---------- SPONSORS ----------*/
 #sponsors ul{text-align:center;font-size:0;}
 #sponsors ul li{display:inline-block;vertical-align:middle;padding:20px 40px;}
