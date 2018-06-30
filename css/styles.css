@@ -917,6 +917,11 @@ p.light-grey{color:#8c8f94;}
 .contact-form :-ms-input-placeholder {color:#8c8f94;opacity:1;}
 .contact-form ::placeholder {color:#8c8f94;opacity:1;}
 
+/*---------- SPONSORS ----------*/
+#sponsors ul{text-align:center;font-size:0;}
+#sponsors ul li{display:inline-block;vertical-align:middle;padding:20px 40px;}
+#sponsors img{max-width:100px;}
+
 
 /*---------- COVER LAYER ----------*/
 .cover-layer{display:block;position:fixed;z-index:3;top:0;left:0;height:100%;width:100%;
