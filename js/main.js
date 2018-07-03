@@ -39,6 +39,18 @@ $(document).ready(function(){
 		}
 	});
 	
+	/*--- SCROLLING ---*/
+	var $header = $('header');
+	var offset = 100;
+	
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > offset ) {
+			$header.addClass('scrolling');
+		} else {
+			$header.removeClass('scrolling'); 
+		}
+	});
+	
 	/*---------- NAVIGATION HAMBURGER ----------*/
 	$(".navigation-hamburger").on("click", function(){
 		if($(this).hasClass('-open')){
@@ -77,7 +89,15 @@ $(document).ready(function(){
 			loop:true,
 			nav:true,
 			navText:["<i class='icon-arrow-left'></i>","<i class='icon-arrow-right'></i>"],
-			dots:false
+			dots:false,
+			responsive:{
+        0:{
+					items:1
+        },
+        750:{
+          items:2
+        }
+    	}
 		});
 	}
 	
