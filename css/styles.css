@@ -1219,9 +1219,12 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
 
 @media only screen and (max-width: 570px) {
 	body{padding-top:60px;}
-	header{height:60px;}
-	header .col.left{width:100px;}
-	.main-search input[type="search"]{font-size:1.4rem;}
+	header,
+	header.scrolling{height:60px;}
+	header .col.left,
+	header.scrolling .col.left{width:100px;}
+	.main-search input[type="search"],
+	header.scrolling .main-search input[type="search"]{font-size:1.4rem;}
 	#mobile_nav .nav-scroller{padding-top:60px;}
 	.banner h2, .content-wrapper h1{font-size:28px;}
 	.banner-wrapper{position:relative;padding:20px 0;}
