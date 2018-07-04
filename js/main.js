@@ -73,7 +73,15 @@ $(document).ready(function(){
 			autoplayTimeout:10000,
 			loop:true,
 			nav:false,
-			animateOut: 'fadeOut'
+			animateOut: 'fadeOut',
+			responsive:{
+        0:{
+					animateOut: false
+        },
+        580:{
+          animateOut: 'fadeOut'
+        }
+    	}
 		});
 	}
 	

@@ -8,11 +8,11 @@ input[type="radio"]{-webkit-appearance:radio;}
 /*---------- ICONS ----------*/
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?e0cbc3');
-  src:  url('fonts/icomoon.eot?e0cbc3#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?e0cbc3') format('truetype'),
-    url('fonts/icomoon.woff?e0cbc3') format('woff'),
-    url('fonts/icomoon.svg?e0cbc3#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?b2v5cf');
+  src:  url('fonts/icomoon.eot?b2v5cf#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?b2v5cf') format('truetype'),
+    url('fonts/icomoon.woff?b2v5cf') format('woff'),
+    url('fonts/icomoon.svg?b2v5cf#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -32,26 +32,56 @@ input[type="radio"]{-webkit-appearance:radio;}
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-flag:before {
-  content: "\e90d";
-}
-.icon-briefcase:before {
-  content: "\e909";
-}
-.icon-location:before {
-  content: "\e90a";
+.icon-vacancies:before {
+  content: "\e908";
 }
 .icon-documents:before {
-  content: "\e90b";
+  content: "\e90e";
+}
+.icon-address:before {
+  content: "\e90f";
+}
+.icon-context-appropriate:before {
+  content: "\e910";
+}
+.icon-catalytic-approach:before {
+  content: "\e911";
+}
+.icon-coalition:before {
+  content: "\e912";
+}
+.icon-gender:before {
+  content: "\e913";
+}
+.icon-geo:before {
+  content: "\e914";
+}
+.icon-learning:before {
+  content: "\e915";
+}
+.icon-localhome:before {
+  content: "\e916";
+}
+.icon-partner:before {
+  content: "\e917";
+}
+.icon-politics:before {
+  content: "\e918";
+}
+.icon-risk:before {
+  content: "\e919";
+}
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e903";
+}
+.icon-twitter:before {
+  content: "\e904";
 }
 .icon-checkmark:before {
   content: "\e90c";
-}
-.icon-menu:before {
-  content: "\e905";
-}
-.icon-close:before {
-  content: "\e906";
 }
 .icon-play:before {
   content: "\e907";
@@ -62,14 +92,11 @@ input[type="radio"]{-webkit-appearance:radio;}
 .icon-arrow-left:before {
   content: "\e901";
 }
-.icon-facebook:before {
-  content: "\e902";
+.icon-menu:before {
+  content: "\e905";
 }
-.icon-search:before {
-  content: "\e903";
-}
-.icon-twitter:before {
-  content: "\e904";
+.icon-close:before {
+  content: "\e906";
 }
 
 /*---------- PLUGINS ----------*/
@@ -1232,6 +1259,15 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
 	.banner h2{color:#165989;}
 	.banner .btn-outlined{color:#165989;border-color:#165989;margin-top:24px;}
 	.banner .btn-outlined:hover{color:#fff;}
+	.banner-slider .owl-dots{position:relative;top:0;right:0;font-size:0;text-align:center;
+		padding:0 0 20px 0;
+		-webkit-transform: translateY(0);
+    transform: translateY(0);
+	}
+	.banner-slider .owl-dots button{display:inline-block;vertical-align: middle;margin:0 10px;}
+	.banner-slider .owl-dots button span{border-color:rgba(22,89,137,0.4);}
+	.banner-slider .owl-dots button.active span{border-color:#165989;background-color:#165989;}
+	.banner-slider .owl-dots button:hover span{border-color:rgba(22,89,137,0.4);}
 	#latest h2, .content-wrapper h2, 
 	p.large-text, .video-section .large-text{font-size:18px;}
 	#partners ul li:first-child{padding-top:0;}
