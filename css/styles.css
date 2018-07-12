@@ -269,6 +269,10 @@ header nav a:before{position:absolute;top:0;left:15px;overflow:hidden;padding:15
 }
 header nav a:hover:before, nav a:focus:before,nav a.active:before{max-width:100%;}
 
+header nav ul{font-size:0;}
+header nav li{display:inline-block;vertical-align:middle;}
+header nav li.current-menu-item a:before{max-width:100%;}
+
 /*---------- MOBILE MENU ----------*/
 .navigation-hamburger{display:none;vertical-align:middle;position:relative;width:40px;height:40px;
 	cursor:pointer;
@@ -924,19 +928,12 @@ p.light-grey{color:#8c8f94;}
 .contacts-wrapper h3{font-size:16px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;
 	color:#165989;margin-bottom:20px;
 }
-.contacts-wrapper .address-list li{position:relative;margin-top:60px;padding-left:44px;}
-.contacts-wrapper .address-list li:first-child{margin-top:0;}
-.contacts-wrapper .address-list li:before{content:"\e90a";width:40px;font-size:36px;
-	font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-	position:absolute;left:0;top:0;color:#165989;
+.contacts-wrapper .address-list{max-width:250px;margin:0 auto;}
+.contacts-wrapper .address-list li{position:relative;margin-top:60px;
+	display:table;width:100%;
 }
+.contacts-wrapper .address-list li:first-child{margin-top:0;}
+.contacts-wrapper .address-list .cell{display:table-cell;vertical-align:top;}
 .contacts-wrapper .address-list p{color:#8c8f94;}
 
 .contact-form{border:2px solid #e8e9e9;padding:52px;
@@ -1023,6 +1020,10 @@ footer nav{font-size:0;}
 footer nav a{display:inline-block;vertical-align:middle;font-weight:500;text-transform:uppercase;
 	padding:15px;color:#165989;letter-spacing:1.5px;font-size:14px;position:relative;
 }
+
+footer nav ul{font-size:0;}
+footer nav li{display:inline-block;vertical-align:middle;}
+
 footer .bottom-section{padding:50px 0;}
 footer .bottom-section .wrapper{display:table;width:100%;padding:0 120px;}
 footer .bottom-section .col{display:table-cell;vertical-align:middle;}
@@ -1184,11 +1185,14 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
 	.contacts-wrapper .col.left{padding-right:0;}
 	.contacts-wrapper .col.right{padding:20px 0 0 0;}
 	.contact-form{padding:0;border:0 none;}
-	.address-list{display:table;width:100%;}
-	.contacts-wrapper .address-list li{display:table-cell;padding-left:44px;}
-	.contacts-wrapper .address-list li:first-child{padding-left:34px;}
-	.contacts-wrapper .address-list li:before{left:10px;font-size:28px;}
-	.contacts-wrapper .address-list li:first-child:before{left:0;}
+	.address-list{display:block;font-size:0;margin-left:-60px;}
+	.contacts-wrapper .address-list{max-width:none;}
+	.contacts-wrapper .address-list li{display:inline-block;vertical-align:top;width:33.33%;
+		margin-top:0;padding:0 20px;
+	}
+	.contacts-wrapper .address-list .cell{display:block;}
+	.contacts-wrapper .address-list .cell.left{padding:0 0 30px 0;width:100%;}
+	.contacts-wrapper .address-list p{font-size:14px;}
 	.contacts-wrapper h3{margin-bottom:10px;}
 	.editor h3{font-size:18px;}
 }
@@ -1237,8 +1241,7 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
 	.timeline{padding-left:20px;}
 	.articles li{width:50%;}
 	.gallery li{width:33.33%;}
-	.contacts-wrapper .address-list li{display:block;padding-left:34px;margin-top:30px;}
-	.contacts-wrapper .address-list li:before{left:0;}
+	.contacts-wrapper .address-list li{margin-bottom:20px;}
 	.editor h3{font-size:16px;}
 	.content-wrapper h2{margin-bottom:18px;}
 	.content-wrapper h1{margin-bottom:32px;}
@@ -1276,7 +1279,7 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
 	#stats .value{font-size:26px;}
 	.latest-gallery{margin-left:-20px;}
 	.latest-gallery li{padding:0 0 20px 20px;}
-	.footer-story .caption{max-width:260px;}
+	.footer-story .caption{max-width:240px;}
 	.footer-story h2{font-size:18px;}
 	.two-col-wrapper .col.right{padding:20px;}
 	.sep-line{margin:30px 0;}
@@ -1292,6 +1295,8 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
 	.articles .btn-more{bottom:40px;}
 	.gallery ul{margin-left:-20px;}
 	.gallery li{width:50%;padding:0 0 20px 20px;}
+	.contacts-wrapper .address-list li{width:100%;}
+	.contacts-wrapper .address-list{max-width:200px;}
 }
 
 
