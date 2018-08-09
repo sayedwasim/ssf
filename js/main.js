@@ -118,4 +118,8 @@ $(document).ready(function(){
 		$('.articles li').matchHeight();
 	}
 	
+	if($('.news-articles').length) {
+		$('.news-articles .block').matchHeight();
+	}
+	
 }); //End of document.ready
