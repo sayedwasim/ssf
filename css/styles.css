@@ -163,7 +163,7 @@ img{max-width:100%;width:100%;height:auto;padding:0;margin:0;border:none;display
 
 .btn-outlined{border:2px solid #fff;height:50px;color:#fff;padding:0 42px;display:inline-block;
   font-size:14px;letter-spacing:1.5px;line-height:46px;text-transform:uppercase;
-  vertical-align:top;font-weight:normal;background-color:transparent;cursor:pointer;
+  vertical-align:top;font-weight:500;background-color:transparent;cursor:pointer;
   -webkit-border-radius:25px;
   border-radius:25px;
   -webkit-transition: all 0.3s ease 0s;
@@ -814,24 +814,54 @@ p.light-grey{color:#175889;}
 #stats p{margin:0;line-height:1.63;color:#000;font-size:16px;}
 
 /*---------- LATEST ----------*/
-#latest .wrapper{display:table;width:100%;}
-#latest .col{display:table-cell;vertical-align:top;}
-#latest .col.left{width:340px;}
-#latest .col.right{padding-left:98px;}
-#latest h2{font-weight:normal;font-size:42px;letter-spacing:-1px;margin-bottom:20px;color:#fff;line-height:1.24;}
+#latest .tbl{display:table;width:100%;}
+#latest .col{display:table-cell;vertical-align:top;width:50%;}
+#latest .col.left{padding-right:145px;position:relative;}
+#latest .col.left:after{content:"";width:1px;height:334px;position:absolute;right:0;top:0;
+	background-color:#fff;
+}
+#latest .col.right{padding-left:145px;}
+#latest h2{font-weight:normal;font-size:42px;letter-spacing:-1px;margin-bottom:38px;color:#fff;line-height:1.24;}
+#latest .btn-wrapper{text-align:center;margin-top:36px;}
+#latest .btn-wrapper .btn-outlined{width:240px;}
 #twitter-widget-0{width:100% !important;}
 
-.latest-gallery{font-size:0;margin-left:-30px;}
-.latest-gallery li{display:inline-block;vertical-align:top;padding:0 0 30px 30px;width:25%;}
+.latest-gallery{font-size:0;margin:-18px 0 0 -18px;}
+.latest-gallery li{display:inline-block;vertical-align:top;padding:18px 0 0 18px;width:33.33%;}
 .latest-gallery li a{display:block;background-color:#000;overflow:hidden;
-  -webkit-border-radius:12px;
-  border-radius:12px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
 }
 .latest-gallery li a img{
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .latest-gallery li a:hover img{opacity:0.6;}
+
+.twitter-wrapper{border:solid 1px #e1e8ee;padding:34px 60px 76px 60px;text-align:center;color:#fff;
+	position:relative;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+.twitter-wrapper .icon{font-size:48px;display:inline-block;vertical-align:top;color:#5babf4;
+	margin-bottom:20px;
+}
+.twitter-wrapper p{position:relative;font-size:19px;line-height:1.16;text-align:left;margin:0;
+	height:154px;overflow:hidden;
+}
+.twitter-wrapper p:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:100%;
+	background: -webkit-linear-gradient(rgba(255,255,255,0) 70%, rgba(22,89,137,1) 100%);
+	background: -o-linear-gradient(rgba(255,255,255,0) 70%, rgba(22,89,137,1) 100%);
+	background: linear-gradient(rgba(255,255,255,0) 70%, rgba(22,89,137,1) 100%);
+}
+.twitter-wrapper .meta{position:absolute;left:0;bottom:0;width:100%;padding:0 60px 35px 60px;
+	display:table;font-weight:500;font-size:14px;
+}
+.twitter-wrapper .meta .cell{display:table-cell;vertical-align:middle;text-align:left;}
+.twitter-wrapper .meta .cell a{color:#fff;}
+.twitter-wrapper .meta .cell a:hover{color:#5babf4;}
+.twitter-wrapper .meta .cell.right{text-align:right;}
 
 /*---------- PRINCIPLES ----------*/
 #principles{font-size:0;margin-left:-100px;}
@@ -1108,11 +1138,21 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
   .editor h3{font-size:24px;}
   
 }
+
+@media only screen and (max-width: 1380px) {
+	.twitter-wrapper p{font-size:18px;}
+	#latest .col.left{padding-right:133px;}
+	#latest .col.right{padding-left:133px;}
+}
+
 @media only screen and (max-width: 1300px) {
   .footer-stories .owl-nav button{width:60px;}
   .two-col-wrapper .col.right{padding:60px 3%;}
 	.news-articles{margin-left:-30px;}
 	.news-articles li{padding:0 0 30px 30px;}
+	.twitter-wrapper .icon{font-size:40px;}
+	#latest .col.left{padding-right:82px;}
+	#latest .col.right{padding-left:82px;}
 }
 @media only screen and (max-width: 1100px) {
   body{padding-top:70px;}
@@ -1190,7 +1230,6 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
   #partners img{max-width:160px;}
   #stats .value{font-size:34px;}
   #stats ul li{padding:30px 10px;}
-  .latest-gallery li{width:50%;}
   .footer-story-content{padding-top:40px;}
   .footer-story .caption{max-width:280px;}
   .footer-story .label{font-size:9px;}
@@ -1231,6 +1270,12 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
   .editor h3{font-size:18px;}
   .editor ul, .editor ol{font-size:12px;}
 	.news-articles li{width:50%;}
+	#latest .col{display:block;width:100%;}
+	#latest .col.left{padding:0 0 40px 0;border-bottom:1px solid #fff;}
+	#latest .col.left:after{display:none;}
+	#latest .col.right{padding:40px 0 0 0;}
+	.twitter-wrapper p{height:auto;}
+	.twitter-wrapper p:after{display:none;}
 }
 
 @media only screen and (max-width: 670px) {
@@ -1258,10 +1303,8 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
   #stats p{max-width:400px;margin:0 auto;}
   #stats .label, #principles h3{font-size:18px;}
   #stats .value{font-size:30px;}
-  #latest .wrapper{display:flex;flex-wrap:wrap-reverse;}
-  #latest .col.right{padding:0 0 20px 0;}
-  #latest .col.left{width:100%;}
-  .latest-gallery li{width:25%;}
+  #latest .col.right{padding:30px 0 20px 0;}
+	#latest .col.left{padding:0 0 30px 0;}
   .footer-story-content{vertical-align:middle;padding:0;}
   .footer-story .caption{max-width:420px;}
   .footer-story h2{font-size:22px;}
@@ -1314,8 +1357,8 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
   #partners h2, #stats h2{font-size:18px;}
   #stats .label, #principles h3{font-size:16px;}
   #stats .value{font-size:26px;}
-  .latest-gallery{margin-left:-20px;}
-  .latest-gallery li{padding:0 0 20px 20px;}
+  .latest-gallery{margin:-20px 0 0 -20px;}
+  .latest-gallery li{padding:20px 0 0 20px;}
   .footer-story .caption{max-width:240px;}
   .footer-story h2{font-size:18px;}
   .two-col-wrapper .col.right{padding:20px;}
@@ -1334,6 +1377,10 @@ footer .bottom-section .social a:hover{background-color:#165989;color:#fff;}
   .gallery li{width:50%;padding:0 0 20px 20px;}
   .contacts-wrapper .address-list li{width:100%;padding:0;}
 	.news-articles li{width:100%;padding-bottom:20px;}
+	.twitter-wrapper .icon{font-size:32px;}
+	.twitter-wrapper{padding:30px 30px 70px 30px;}
+	.twitter-wrapper .meta{padding:0 30px 30px 30px;}
+	.twitter-wrapper p{font-size:16px;}
 }
 
 
